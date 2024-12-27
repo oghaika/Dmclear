@@ -12,7 +12,7 @@ let client = new Client({
 
 let c = {
     useProxy: false,
-    token: "SEU TOKEN AQUI!",
+    token: "SEU TOKEN",
     maxRetries: 10, 
     retryDelay: 5000
 }
@@ -211,7 +211,7 @@ async function ClearAll(channelId) {
 
 
 client.on('ready', () => {
-    showDashboard();
+    Dash();
 });
 
 client.on('messageCreate', async (m) => {
